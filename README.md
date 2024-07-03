@@ -13,4 +13,4 @@ npx tailwindcss init
 
 ##226.- Añadiendo la página de favoritos y routing entre paginas.
 ##227.- Detectando la página de inicio
-
+##228.- Creando nuestro primer store
