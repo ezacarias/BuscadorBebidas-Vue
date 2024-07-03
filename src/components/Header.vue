@@ -1,12 +1,17 @@
 <script setup>
-import { RouterLink } from 'vue-router';
+import { computed } from 'vue'
+import { RouterLink, useRoute } from 'vue-router';
+const route = useRoute()
+console.log(route)
 
+const paginaInicio = computed(()=> route.name === 'inicio')
 
 </script>
 
 <template>
     <header
     class="bg-slate-800"
+    :class="{header : paginaInicio }"
     >
         <div class="mx-auto container px-5 py-16">
             <div class="flex justify-between items-center">
@@ -14,7 +19,7 @@ import { RouterLink } from 'vue-router';
                 <RouterLink 
                 :to="{name:'inicio'}"
                 >
-                  <img class="w-32" src="../img/logo.sgv" alt="Logotipo" /> 
+                  <img class="w-32" src="../public/logo.sgv" alt="Logotipo" /> 
                 </RouterLink>
               </div>
               <nav class="flex gap-4">
@@ -36,7 +41,11 @@ import { RouterLink } from 'vue-router';
 
               </nav>
             </div>
-            <form class="md:w-1/2 2xl:w-1/3 bg-orange-400 my-32 p-10 rounded-lg  shadow space-y-6" action="">
+            <form 
+            class="md:w-1/2 2xl:w-1/3 bg-orange-400 my-32 p-10 rounded-lg  shadow space-y-6" 
+            v-if="paginaInicio"
+            action=""
+            >
                   <div class="space-y-4">
                     <label class="block text-white text-uppercase font-extrabold text-lg" for="ingrediente">
                         Nombre ingredientes:
@@ -65,3 +74,11 @@ import { RouterLink } from 'vue-router';
         </div>
     </header>
 </template>
+
+<style>
+  .header{
+     background-image:url('/img/bg/bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+</style>

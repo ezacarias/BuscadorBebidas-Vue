@@ -12,4 +12,5 @@ npx tailwindcss init
 ##225.- Creando el formulario de búsqueda.
 
 ##226.- Añadiendo la página de favoritos y routing entre paginas.
+##227.- Detectando la página de inicio
 
