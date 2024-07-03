@@ -10,3 +10,6 @@ BuscadorBebidas-Vue
 -Una vez instalada correr el siguiente comando:
 npx tailwindcss init
 ##225.- Creando el formulario de búsqueda.
+
+##226.- Añadiendo la página de favoritos y routing entre paginas.
+
