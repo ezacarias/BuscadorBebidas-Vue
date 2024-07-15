@@ -10,5 +10,7 @@ BuscadorBebidas-Vue
 npx tailwindcss init
 ##225.- Creando el formulario de búsqueda.
 
-
-## 226.- Añadiendo la página de favoritos y routing entre paginas.
+##226.- Añadiendo la página de favoritos y routing entre paginas.
+##227.- Detectando la página de inicio
+##228.- Creando nuestro primer store
+##229.- Como consumir un store en Views y componentes

@@ -1,12 +1,54 @@
 <script setup>
+import { computed } from 'vue'
+import { RouterLink, useRoute } from 'vue-router';
+import { useBebidasStore } from '../stores/bebidas'; 
+
+const route = useRoute()
+const store = useBebidasStore()
+console.log(store.categorias)
+
+const paginaInicio = computed(()=> route.name === 'inicio')
 
 </script>
 
 <template>
-    <header>
+    <header
+    class="bg-slate-800"
+    :class="{header : paginaInicio }"
+    >
         <div class="mx-auto container px-5 py-16">
-            <div>
-                <form class="md:w-1/2 2xl:w-1/3 bg-orange-400 my-32 p-10 rounded-lg  shadow space-y-6" action="">
+            <div class="flex justify-between items-center">
+              <div>
+                <RouterLink 
+                :to="{name:'inicio'}"
+                >
+                  <img class="w-32" src="../public/logo.sgv" alt="Logotipo" /> 
+                </RouterLink>
+              </div>
+              <nav class="flex gap-4">
+                    <RouterLink
+                    :to="{name:'inicio'}"
+                    class="text-white uppercase font-bold"
+                    active-class="text-orange-500"
+                    >
+                        Inicio
+                    </RouterLink>
+
+                    <RouterLink
+                    :to="{name:'favoritos'}"
+                    class="text-white uppercase font-bold"
+                    active-class="text-orange-500"
+                    >
+                        Favoritos
+                    </RouterLink>
+
+              </nav>
+            </div>
+            <form 
+            class="md:w-1/2 2xl:w-1/3 bg-orange-400 my-32 p-10 rounded-lg  shadow space-y-6" 
+            v-if="paginaInicio"
+            action=""
+            >
                   <div class="space-y-4">
                     <label class="block text-white text-uppercase font-extrabold text-lg" for="ingrediente">
                         Nombre ingredientes:
@@ -32,7 +74,14 @@
                   class="bg-orange-400 hover:bg-orange-900 cursor-pointer text-white font-extrabold w-full p-2 rounded-lg uppercase"
                   type="submit" value="Buscar Recetas">
                 </form>
-            </div>
         </div>
     </header>
 </template>
+
+<style>
+  .header{
+     background-image:url('/img/bg/bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+</style>
