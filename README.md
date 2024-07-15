@@ -20,3 +20,4 @@ npx tailwindcss init
 ##232.- Comunicando el submit con el store
 ##233.- Creando los services para el API y el config de Axios.
 ##234.- Consultando las API con los valores ingresados en el formulario
+##235.- Primeros pasos, Mostrando los resultados de la consulta.
