@@ -14,3 +14,5 @@ npx tailwindcss init
 ##227.- Detectando la página de inicio
 ##228.- Creando nuestro primer store
 ##229.- Como consumir un store en Views y componentes
+
+##230.- Llamando el api desde el store y mostrando las caegorias en el formulario
