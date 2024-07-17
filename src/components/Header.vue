@@ -8,6 +8,10 @@ const store = useBebidasStore()
 console.log(store.categorias)
 
 const paginaInicio = computed(()=> route.name === 'inicio')
+const handleSubmit = ()=>{
+ //TODO: Validar
+ store.obtenerRecetas()
+}
 
 </script>
 
@@ -22,7 +26,7 @@ const paginaInicio = computed(()=> route.name === 'inicio')
                 <RouterLink 
                 :to="{name:'inicio'}"
                 >
-                  <img class="w-32" src="../public/logo.sgv" alt="Logotipo" /> 
+                  <img class="w-32" src="../../public/img/logo.svg" alt="Logotipo" /> 
                 </RouterLink>
               </div>
               <nav class="flex gap-4">
@@ -45,9 +49,9 @@ const paginaInicio = computed(()=> route.name === 'inicio')
               </nav>
             </div>
             <form 
-            class="md:w-1/2 2xl:w-1/3 bg-orange-400 my-32 p-10 rounded-lg  shadow space-y-6" 
             v-if="paginaInicio"
-            action=""
+            class="md:w-1/2 2xl:w-1/3 bg-orange-400 my-32 p-10 rounded-lg  shadow space-y-6" 
+            @submit.prevent="handleSubmit"
             >
                   <div class="space-y-4">
                     <label class="block text-white text-uppercase font-extrabold text-lg" for="ingrediente">
@@ -58,6 +62,7 @@ const paginaInicio = computed(()=> route.name === 'inicio')
                     type="text"
                     class="p-3 w-full rounded-lg focus:outline-none"
                     placeholder="Nombre o ingrediente"
+                    v-model="store.busqueda.nombre"
                     >
                   </div>
 
@@ -65,8 +70,18 @@ const paginaInicio = computed(()=> route.name === 'inicio')
                     <label class="block text-white text-uppercase font-extrabold text-lg" for="categoria">
                         Categoría:
                     </label>
-                    <select name="categoria" id="categoria">
+                    <select name="categoria" id="categoria"
+                    v-model="store.busqueda.categoria"
+                    >
+                    
                         <option value="">--seleccione--</option>
+                        <option
+                         v-for="categoria in store.categorias"
+                         :key="categoria.strCategory"
+                         :value="categoria.strCategory"
+                        >
+                        {{ categoria.strCategory }}
+                        </option>
                     </select>
                   </div>
 
@@ -79,8 +94,9 @@ const paginaInicio = computed(()=> route.name === 'inicio')
 </template>
 
 <style>
+  /* ../../public/img/logo.svg */
   .header{
-     background-image:url('/img/bg/bg.jpg');
+     background-image:url('../../public/img/bg.jpg');
     background-size: cover;
     background-position: center;
   }

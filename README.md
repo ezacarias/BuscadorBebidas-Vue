@@ -15,9 +15,10 @@ npx tailwindcss init
 ##228.- Creando nuestro primer store
 ##229.- Como consumir un store en Views y componentes
 
-##230.- Llamando el api desde el store y mostrando las caegorias en el formulario
-##231.- Creando el state en el store y escribiendo en el.
-##232.- Comunicando el submit con el store
+##230.- Llamando el api desde el store y mostrando las categorias en el formulario.
+- Instalar axios "npm  i axios".
+##231.- Creando Un State en el store y escribiendo en el.
+##232.- Comunicando el submit con el store.
 ##233.- Creando los services para el API y el config de Axios.
-##234.- Consultando las API con los valores ingresados en el formulario
-##235.- Primeros pasos, Mostrando los resultados de la consulta.
+##234.- Consultando las API con los valores ingresados en el formulario.
+##235.- Primeros pasos, mostrando los resultados de la consulta.
