@@ -26,3 +26,5 @@ npx tailwindcss init
 
 ##236.- Finalizando el componente que muestra la bebida.
 ##237.- Obtener la receta completa al dar un click en una receta.
+##238.- Instalando y configurando Headless UI
+    -Instalar Headless UI : npm install @headlessui/vue
