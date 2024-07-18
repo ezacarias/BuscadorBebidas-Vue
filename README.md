@@ -28,3 +28,4 @@ npx tailwindcss init
 ##237.- Obtener la receta completa al dar un click en una receta.
 ##238.- Instalando y configurando Headless UI
     -Instalar Headless UI : npm install @headlessui/vue
+##239.- Creando un store para el modal    
