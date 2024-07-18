@@ -94,7 +94,6 @@ const handleSubmit = ()=>{
 </template>
 
 <style>
-  /* ../../public/img/logo.svg */
   .header{
      background-image:url('../../public/img/bg.jpg');
     background-size: cover;

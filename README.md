@@ -1,4 +1,5 @@
-BuscadorBebidas-Vue
+##BuscadorBebidas-Vue
+- Api de bebidas: https://www.thecocktaildb.com/api.php
 
 221.- El proyecto que vamos a construir
 222.- ¿Que es Pinia?, Creando el proyecto y el primer store
@@ -22,3 +23,6 @@ npx tailwindcss init
 ##233.- Creando los services para el API y el config de Axios.
 ##234.- Consultando las API con los valores ingresados en el formulario.
 ##235.- Primeros pasos, mostrando los resultados de la consulta.
+
+##236.- Finalizando el componente que muestra la bebida.
+##237.- Obtener la receta completa al dar un click en una receta.
