@@ -30,3 +30,4 @@ npx tailwindcss init
     -Instalar Headless UI : npm install @headlessui/vue
 ##239.- Creando un store para el modal    
 ##240.- Comunicación entre stores para Mostrar y ocultar el Modal
+##241.- Mostrando la información de la receta en el modal.

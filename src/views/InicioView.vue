@@ -1,7 +1,7 @@
 <script setup>
-import Receta from '../components/Receta.vue'
-import { useBebidasStore } from '../stores/bebidas'
-const bebidas = useBebidasStore()
+  import Receta from '../components/Receta.vue'
+  import { useBebidasStore } from '../stores/bebidas'
+  const bebidas = useBebidasStore()
 </script>
 
 <template>
