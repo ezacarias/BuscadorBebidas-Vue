@@ -29,10 +29,10 @@ const handleSubmit = ()=>{
                   <img class="w-32" src="../../public/img/logo.svg" alt="Logotipo" /> 
                 </RouterLink>
               </div>
-              <nav class="flex gap-4">
+              <nav class="flex gap-4 text-white">
                     <RouterLink
                     :to="{name:'inicio'}"
-                    class="text-white uppercase font-bold"
+                    class="uppercase font-bold"
                     active-class="text-orange-500"
                     >
                         Inicio
@@ -40,7 +40,7 @@ const handleSubmit = ()=>{
 
                     <RouterLink
                     :to="{name:'favoritos'}"
-                    class="text-white uppercase font-bold"
+                    class="uppercase font-bold"
                     active-class="text-orange-500"
                     >
                         Favoritos

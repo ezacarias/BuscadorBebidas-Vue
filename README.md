@@ -36,3 +36,4 @@ npx tailwindcss init
 ##243.- Creando el store de favoritos
 ##244.- Agregando recetas a favoritos
 ##245.- Almacenando Favoritos en localstorage
+##246.- Mostrando los favoritos
