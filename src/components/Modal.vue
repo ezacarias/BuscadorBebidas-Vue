@@ -5,6 +5,22 @@ import { useBebidasStore } from '../stores/bebidas';
 
 const modal = useModalStore()
 const bebidas = useBebidasStore()
+
+
+const formatearIngredientes = ()=>{
+    const ingredientesDiv = document.createElement('div')
+    for(let i = 1; i<= 15; i++){
+        if(bebidas.receta[`strIngredient${i}`]){
+          const ingrediente = bebidas.receta[`strIngredient${i}`];
+          const cantidad    = bebidas.receta[`strMeasure${i}`];
+          const ingredienteCantidad = document.createElement('P');
+          ingredienteCantidad .classList.add('text-lg');
+          ingredienteCantidad.textContent = `${ingrediente} - ${cantidad}` 
+          ingredientesDiv.appendChild(ingredienteCantidad)
+        }
+    }
+    return ingredientesDiv
+}
 </script>
 
 <template>
@@ -26,7 +42,22 @@ const bebidas = useBebidasStore()
                     <img 
                     :src="bebidas.receta.strDrinkThumb" 
                     alt="" 
+                    class="mx-auto w-96"
                     />
+
+                    <DialogTitle as="h3" class="text-gray-900 text-4xl font-extrabold my-5">
+                      ingredientes y cantidades
+                    </DialogTitle>
+
+                    <div v-html="formatearIngredientes().outerHTML"></div>
+
+                    <DialogTitle as="h3" class="text-gray-900 text-4xl font-extrabold my-5">
+                      Instrucciones
+                    </DialogTitle>
+
+                    <p class="text-lg text-gray-500">
+                        {{ bebidas.receta.strInstructions }}
+                    </p>
 
 
                   </div>
@@ -41,6 +72,16 @@ const bebidas = useBebidasStore()
                     >
                     Cerrar
                     </button>
+
+                    <button
+                     type="button"
+                     class="w-full rounded 
+                     bg-orange-600 p-3 font-bold uppercase text-white shadow 
+                     hover:bg-orange-500"
+                    >
+                      Agregar a Favoritos
+                    </button>
+
                 </div> 
               </DialogPanel>
             </TransitionChild>

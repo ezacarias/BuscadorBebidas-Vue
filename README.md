@@ -31,3 +31,5 @@ npx tailwindcss init
 ##239.- Creando un store para el modal    
 ##240.- Comunicación entre stores para Mostrar y ocultar el Modal
 ##241.- Mostrando la información de la receta en el modal.
+
+##242.- Iterando en ingredientes e instrucciones
