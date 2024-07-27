@@ -33,3 +33,4 @@ npx tailwindcss init
 ##241.- Mostrando la información de la receta en el modal.
 
 ##242.- Iterando en ingredientes e instrucciones
+##243.- Creando el store de favoritos

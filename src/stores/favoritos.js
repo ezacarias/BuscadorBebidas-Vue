@@ -1,5 +1,11 @@
 import { defineStore } from 'pinia'
 
 export const useFavoritosStore = defineStore('favoritos',()=>{
-    //const handleClickFavorito
+    const handleClickFavorito = ()=>{
+        console.log('agregando')
+    }
+    return {
+        handleClickFavorito
+    }
+
 })
