@@ -38,3 +38,5 @@ npx tailwindcss init
 ##245.- Almacenando Favoritos en localstorage
 ##246.- Mostrando los favoritos
 ##247.- Evitar Favoritos duplicados
+
+#248.- Cambiandotexto si un favorito ya se encuentra agregado.
