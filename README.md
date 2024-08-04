@@ -44,3 +44,5 @@ npx tailwindcss init
 ##250.- Realizando algunas mejoras a la experiencia de usuario
 ##251.- Mostrando Texto cuando no hay favoritos
 ##252. Mostrando texto cuando no hay recetas o el usuario no ha buscado.
+##253.- Notificaciones en Vue.js
+ - npm i @heroicons/vue
