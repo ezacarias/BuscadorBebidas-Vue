@@ -1,4 +1,4 @@
-import { ref, watch, onMounted } from 'vue'
+import { ref, watch, onMounted,computed } from 'vue'
 import { defineStore } from 'pinia'
 import { useBebidasStore } from './bebidas'
 import { useModalStore } from '.modal'
@@ -46,9 +46,11 @@ export const useFavoritosStore = defineStore('favoritos',()=>{
         modal.modal = false
 
     }
+    const noFavoritos = computed(()=> favoritos.value.length === 0)
     return {
         favoritos,
-        handleClickFavorito
+        handleClickFavorito,
+        noFavoritos
     }
 
 })

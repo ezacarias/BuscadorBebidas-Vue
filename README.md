@@ -42,3 +42,4 @@ npx tailwindcss init
 ##248.- Cambiandotexto si un favorito ya se encuentra agregado.
 ##249.- Eliminar Favoritos
 ##250.- Realizando algunas mejoras a la experiencia de usuario
+##251.- Mostrando Texto cuando no hay favoritos
