@@ -6,7 +6,10 @@
 
 <template>
     <h1 class="text-6xl font-extrabold text-neutral-900">Recetas</h1>
-    <div
+    <p v-if="bebidas.noRecetas" class="my-10 text-center 2xl">
+      No Hay resultados, utiliza el formulario para buscar recetas
+    </p>
+    <div v-else
     class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 my-10 gap-10"
     >
       <Receta 

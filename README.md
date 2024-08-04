@@ -43,3 +43,4 @@ npx tailwindcss init
 ##249.- Eliminar Favoritos
 ##250.- Realizando algunas mejoras a la experiencia de usuario
 ##251.- Mostrando Texto cuando no hay favoritos
+##252. Mostrando texto cuando no hay recetas o el usuario no ha buscado.
