@@ -39,4 +39,5 @@ npx tailwindcss init
 ##246.- Mostrando los favoritos
 ##247.- Evitar Favoritos duplicados
 
-#248.- Cambiandotexto si un favorito ya se encuentra agregado.
+##248.- Cambiandotexto si un favorito ya se encuentra agregado.
+##249.- Eliminar Favoritos

@@ -20,5 +20,6 @@ export const useModalStore = defineStore('modal', ()=>{
     return {
         modal,
         handleClickModal,
+        textoBoton
     }
 })

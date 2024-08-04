@@ -82,7 +82,7 @@ const formatearIngredientes = ()=>{
                      hover:bg-orange-500"
                      @click="favoritos.handleClickFavorito"
                     >
-                      Agregar a Favoritos
+                      {{ modal.textoBoton }}
                     </button>
 
                 </div> 
