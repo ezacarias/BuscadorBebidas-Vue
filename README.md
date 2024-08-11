@@ -46,3 +46,6 @@ npx tailwindcss init
 ##252. Mostrando texto cuando no hay recetas o el usuario no ha buscado.
 ##253.- Notificaciones en Vue.js
  - npm i @heroicons/vue
+
+ ##254.- Mostrando Notificación de agregado
+ 
