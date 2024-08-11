@@ -48,4 +48,5 @@ npx tailwindcss init
  - npm i @heroicons/vue
 
  ##254.- Mostrando Notificación de agregado
+ ##255.- Reseteando el state en pinea
  
