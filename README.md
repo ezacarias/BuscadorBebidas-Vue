@@ -49,4 +49,4 @@ npx tailwindcss init
 
  ##254.- Mostrando Notificación de agregado
  ##255.- Reseteando el state en pinea
- 
+ ##256.- Mostrando notificación cuando un elemento se elimina
